@@ -4,25 +4,25 @@ let tours = [
   {
     type: "Market Tour",
     tag: "market",
-    price: 1,
+    price: 50,
     inCart: 0
   },
   {
     type: "Dessert Tour",
     tag: "dessert",
-    price: 2,
+    price: 60,
     inCart: 0
   },
   {
     type: "Food Tour",
     tag: "food",
-    price: 1,
+    price: 75,
     inCart: 0
   },
   {
     type: "Drink Tour",
     tag: "drink",
-    price: 2,
+    price: 50,
     inCart: 0
   },
 ];
@@ -41,11 +41,11 @@ function onLoadCartNumbers() {
   }
 }
 
-function cartNumbers(icecreams, action) {
+function cartNumbers(tours, action) {
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
 
-  let cartItems = localStorage.getItem("icecreamsInCart");
+  let cartItems = localStorage.getItem("toursInCart");
   cartItems = JSON.parse(cartItems);
 
   if (action == "decrease") {
@@ -195,7 +195,7 @@ function manageQuantity() {
         cartItems[currentProduct].inCart -= 1;
         cartNumbers(cartItems[currentProduct], "decrease");
         totalCost(cartItems[currentProduct], "decrease");
-        localStorage.setItem("icecreamsInCart", JSON.stringify(cartItems));
+        localStorage.setItem("toursInCart", JSON.stringify(cartItems));
         displayCart();
       }
     });

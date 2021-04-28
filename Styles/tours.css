@@ -19,6 +19,7 @@
 .header ion-icon {
   font-size: 50px;
 }
+
 /* TABLE */
 table,
 th,
@@ -68,7 +69,7 @@ html {
   color: #000;
 }
 
-/* INDEX PAGE */
+/* MAIN HTML PAGE */
 
 .row-1,
 .row-2 {
