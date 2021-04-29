@@ -10,13 +10,13 @@ let tours = [
   {
     type: "Dessert Tour",
     tag: "dessert",
-    price: 60,
+    price: 50,
     inCart: 0
   },
   {
     type: "Food Tour",
     tag: "food",
-    price: 75,
+    price: 50,
     inCart: 0
   },
   {
@@ -113,7 +113,7 @@ function displayCart() {
       productsContainer.innerHTML += `
     <div class="product">
    <ion-icon name="close-circle-outline"></ion-icon>
-   <img src="images/${item.tag}.jpg">
+   <img src="https://media.istockphoto.com/vectors/ticket-vector-isolated-vector-id1094499134?k=6&m=1094499134&s=612x612&w=0&h=DRN7nbv-e62ACS3k5coRug1W8uwGDQ6ZHBasf3yFhNw=">
   <span class="item-type">${item.type}</span>
   </div>
   <div class="price">£${item.price}.00</div>

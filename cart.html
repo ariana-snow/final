@@ -3,17 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Cart</title>
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Styles/tours.css" />
+    <link rel="global stylesheet" href="./Styles/global.css" />
+    <link rel="local stylesheet" href="./Styles/tours.css" />
   </head>
 
   <body>
+    <nav id="top-nav">
+    <ul class="main-items">
+      <li><a href="./index.html">HOME</a></li>
+      <li>
+        <ul class="sub-items">
+          <li>
+            <a href="./about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./tours.html">TOURS</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+      <section>
     <div class="header">
-      <h1><a href="index.html">Market Tours</a></h1>
+      <h1><a href="tours.html">Market Tours</a></h1>
 
       <div class="shopping-cart">
         <ion-icon name="basket"></ion-icon>
